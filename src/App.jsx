@@ -93,7 +93,7 @@ export default function App() {
       </div>
 
       {/* MAIN */}
-      <div style={{ maxWidth: 800, margin: '32px auto', padding: '0 16px' }}>
+      <div style={{ maxWidth: 1100, margin: '32px auto', padding: '0' }}>
 
         {/* FORUM */}
         {tab === 'forum' && (
