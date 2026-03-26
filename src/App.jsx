@@ -93,7 +93,7 @@ export default function App() {
       </div>
 
       {/* MAIN */}
-      <div style={{ maxWidth: 1100, margin: '32px auto', padding: '0' }}>
+      <div style={{ maxWidth: 1100, margin: '32px 0', padding: '0 32px' }}>
 
         {/* FORUM */}
         {tab === 'forum' && (
@@ -138,7 +138,7 @@ export default function App() {
       {/* AUTH MODAL */}
       {showAuth && (
         <div onClick={() => setShowAuth(false)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div onClick={e => e.stopPropagation()} style={{ background: '#fff', borderRadius: 14, padding: 36, width: 400, maxWidth: '100%', position: 'relative' }}>
+          <div onClick={e => e.stopPropagation()} style={{ background: '#fff', borderRadius: 14, padding: 36, width: 400, maxWidth: '95vw', position: 'relative' }}>
             <button onClick={() => setShowAuth(false)} style={{ position: 'absolute', top: 12, right: 16, background: 'none', border: 'none', fontSize: 22, cursor: 'pointer', color: '#a0aec0' }}>✕</button>
             <div style={{ textAlign: 'center', fontSize: 20, fontWeight: 700, color: '#1a2744', marginBottom: 20 }}>Construct<span style={{ color: '#4a90d9' }}>Hub</span></div>
             <div style={{ display: 'flex', borderBottom: '2px solid #e2e8f0', marginBottom: 24 }}>
